@@ -10,7 +10,9 @@ class Unicorn {
     this.name = name;
   }
   isWhite() {
-    return false
+    if (this.color !== 'white') {
+      return false
+    }
   }
   says(phrase) {
     return `**;* ${phrase} *;**`

@@ -1,5 +1,5 @@
 class Magician {
-    constructor (mage, assistant) {
+    constructor (mage) {
         this.name = `The Great ${mage.name}`;
         this.assistant = mage.assistant;
         if (mage.clothing === undefined) {
@@ -15,7 +15,6 @@ class Magician {
     }
     performTrick() {
       this.confidencePercentage += 10;
-      console.log(this.confidencePercentage)
       if (this.favoriteAccessory === 'top hat') {
         return `PULL RABBIT FROM TOP HAT`;
       }

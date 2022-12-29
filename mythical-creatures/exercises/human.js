@@ -5,14 +5,11 @@ class Human {
     this.knockedOut = false;
     }
     noticesOgre() {
-      if (this.encounterCounter % 3 === 0 && this.encounterCounter > 0) {
-         return true;
+      if (this.encounterCounter > 0 && this.encounterCounter % 3 === 0) {
+        return true;
       }
       else return false;
     }
-    } 
-
-
-
+}
 
 module.exports = Human;

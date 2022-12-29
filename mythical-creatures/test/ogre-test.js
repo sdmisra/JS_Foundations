@@ -5,7 +5,7 @@ const Human = require('../exercises/human');
 describe('Ogre', () => {
   // Oh no! It looks like there's no text in the `it` blocks! I guess you'll have to read the tests SUPER carefully to know what the test is expecting!
 
-  it('Instantiates our good friend, Ogre. The Ogres default name is Brak.', function() {
+  it('Instantiates our good friend, Ogre.', function() {
     const ogre = new Ogre({name:'Brak'});
     assert.equal(ogre.name, 'Brak');
   });
@@ -86,7 +86,7 @@ describe('Ogre', () => {
     assert.equal(ogre.swings, 1);
   });
 
-  it('', function() {
+  it('The human should be knocked out after two swings from the ogre without interruption.', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
@@ -103,7 +103,7 @@ describe('Ogre', () => {
     assert.equal(human.knockedOut, true);
   });
 
-  it('', function() {
+  it('The ogre should be able to resuscitate a human with a heartfelt apology.', function() {
     const ogre = new Ogre({name: 'Brak'});
     const human = new Human('Jane');
 
